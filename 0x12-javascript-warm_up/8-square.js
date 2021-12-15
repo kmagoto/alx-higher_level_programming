@@ -1,10 +1,10 @@
 #!/usr/bin/node
-
-const size = parseInt(process.argv[2], 10);
-if (isNaN(size)) {
+'use strict';
+let x = process.argv[2];
+if (isNaN(x)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < size; i += 1) {
-    console.log('X'.repeat(size));
+  for (let i = 0; i < x; i++) {
+    console.log('X'.repeat(x));
   }
 }

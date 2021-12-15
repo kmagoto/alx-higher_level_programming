@@ -1,8 +1,12 @@
 #!/usr/bin/node
-
-const a = parseInt(process.argv[2], 10);
-const b = parseInt(process.argv[3], 10);
-function add (x, y) {
-  return (x + y);
+'use strict';
+let a = process.argv[2];
+let b = process.argv[3];
+function add (a, b) {
+  if (isNaN(a) || isNaN(b)) {
+    return (NaN);
+  } else {
+    return (parseInt(a) + parseInt(b));
+  }
 }
 console.log(add(a, b));

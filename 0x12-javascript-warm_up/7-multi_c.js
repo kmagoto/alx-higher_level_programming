@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+'use strict'
 const num = parseInt(process.argv[2], 10);
 if (isNaN(num)) {
     console.log('Missing number of occurences');
