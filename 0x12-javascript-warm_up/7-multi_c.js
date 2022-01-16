@@ -1,10 +1,9 @@
 #!/usr/bin/node
-'use strict'
-const num = parseInt(process.argv[2], 10);
-if (isNaN(num)) {
-    console.log('Missing number of occurences');
+const x = Math.floor(Number(process.argv[2]));
+if (isNaN(x)) {
+  console.log('Missing number of occurrences');
 } else {
-    for (let i = num; i > 0; i -= 1) {
-        console.log('C is fun');
-    }
+  for (let i = 0; i < x; i++) {
+    console.log('C is fun');
+  }
 }
